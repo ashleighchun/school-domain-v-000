@@ -1,4 +1,6 @@
 # code here!
+
+require "pry"
 class School
   attr_accessor :roster, :add_student, :sort
   
@@ -20,8 +22,9 @@ class School
     roster[grade]
   end
 
-  def sort(student_name) 
-     roster[student_name].sort
+  def sort
+     roster[name].sort
+     binding.pry
   end
 
 end
